@@ -1,2 +1,2 @@
 # dotfiles
-My dotfiles for sway and waybar
+My dotfiles for swayfx and waybar
