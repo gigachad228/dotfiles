@@ -1,2 +1,2 @@
 # dotfiles
-My dotfiles for swayfx and waybar
+My dotfiles for Hyprland, waybar, wofi and fastfetch
