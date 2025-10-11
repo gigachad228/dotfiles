@@ -64,9 +64,7 @@ button:hover {
     background-color: #64727D;
     box-shadow: inset 0 -3px #ffffff;
 }
-
 #battery,
-#cpu,
 #memory,
 #disk,
 #temperature,
@@ -156,6 +154,10 @@ label:focus {
 	padding: 0 7px;
 
 }
+#cpu {
+	padding-right: 15px;
+	padding-left: 15px;
+}
 #custom-power,
 #clock {
 	padding: 0 15px
@@ -173,7 +175,10 @@ label:focus {
     color: #beb2c5;
     transition-property: background-color;
     transition-duration: .3s;
-    border-radius: 5px
+    border-radius: 5px;
+    margin: 2px;
+    margin-right: 0px;
+    opacity: 0.8;
 }
 #clock:hover,
 #custom-power:hover,
@@ -183,25 +188,30 @@ label:focus {
 #memory:hover,
 #cpu:hover {
 	background-color: @secondary_color;
+	opacity: 1;
+	box-shadow: inset 0 -3px @secondary_color_D;
 }
 #workspaces button {
     padding: 0 10px;
     background-color: transparent;
-    color: #000000;
+	color: @main_color_D;
     transition-property: background-color;
     transition-duration: .3s;
-    border-radius: 5px
+    border-radius: 5px;
+    opacity: 0.8;
 }
 #workspaces button:hover {
-	color: @main_color_D;
+    color: @main_color_D;
     background: rgba(0, 0, 0, 0.2);
     box-shadow: inset 0 -3px @secondary_color_D;
+    opacity: 0.8;
 }
 
-#workspaces button.focused {
+#workspaces button.active {
     background-color: @main_color;
-    color: @main_color_D;
+    color: #beb2c5;
     box-shadow: inset 0 -3px @main_color_D;
+    opacity: 0.8;
 }
 #disk {
     background-color: #964B00;

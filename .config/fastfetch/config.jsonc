@@ -1,0 +1,36 @@
+{
+	"logo": {
+		"source": "~/.local/share/fastfetch/logos/pinkie.ansi",
+		"color": {
+		        "1": "#8e4eb2"
+		    }
+	},
+	"display": {
+		"color": {
+		    "keys": "#8e4eb2",    // Key color
+		    "title": "#4a295d"     // Title color
+		}
+	},
+	//"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "separator",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "display",
+    "de",
+    "wm",
+    "font",
+    "terminal",
+    "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "disk",
+    "break"
+  ]
+}

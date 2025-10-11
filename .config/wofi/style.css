@@ -1,0 +1,77 @@
+@import "/home/dedj/.config/wofi/colors.css";
+/* CREDITS TO DIINKI FOR SUCH AN AWESOME WOFI THEME, GO SUBSCRIBE TO THEM
+DOTFILE: https://github.com/diinki/diinki-retrofuture/blob/main/config/wofi/style.css
+CHANNEL: https://www.youtube.com/channel/UCrk2bNxxxLP-Qd77KxBJ3Xg
+I ONLY CHANGED COLORS TO FIT THE THEME OF MY RICE!!! */
+* {
+  font-family: Maple Mono;
+  background: transparent;
+  color: @main_color_D;
+}
+
+#window {
+  color: @main_color_D;
+  border-color: @main_color;
+  border-style: solid;
+  border-width: 2px;
+
+  /*Linear gradient background instead of standard background, because it makes cleaner border-radius cuts, issa bug :p*/
+  background-image: linear-gradient(to bottom, #141216 100%);
+  border-radius: 14px;
+}
+#scroll {
+  border-top-style: solid;
+  border-width: 1px;
+  border-color: @main_color;
+}
+#inner-box {
+  padding-top: 12px;
+}
+#entry {
+  border-style: none;
+  border-color: @main_color;
+  color: @main_color_D;
+  padding: 6px;
+  margin-bottom: 8px;
+  margin-left: 12px;
+  margin-right: 12;
+
+  border-radius: 12px;
+}
+
+#entry:selected {
+  background: #27232b;
+  color: @main_color_D;
+  font-weight: bold;
+  outline: none;
+}
+
+#input {
+  background-color: #141216;
+  color: @main_color_D;
+  border-color: @main_color;
+
+  border-style: none;
+  border-bottom-style: solid;
+  border-width: 1px;
+
+  font-style: normal;
+
+  border-radius: 8;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+  padding: 12px;
+  margin: 8px;
+}
+#input:focus {
+  background: #27232b;
+  background-color: #27232b;
+  border-color: #ac82e9;
+  font-style: italic;
+}
+
+#img {
+  padding: 4px;
+  margin-right: 6px;
+}
